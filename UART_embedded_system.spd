@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_jtag_uart_0.vhd"
+   type="VHDL"
+   library="jtag_uart_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/reg32.vhd"
+   type="VHDL"
+   library="reg32_avalon_interface_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/reg32_avalon_interface.vhd"
+   type="VHDL"
+   library="reg32_avalon_interface_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_onchip_memory2_0.hex"
+   type="HEX"
+   library="onchip_memory2_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_onchip_memory2_0.vhd"
+   type="VHDL"
+   library="onchip_memory2_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0.sdc"
+   type="SDC"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0.vhd"
+   type="VHDL"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_jtag_debug_module_sysclk.vhd"
+   type="VHDL"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_jtag_debug_module_tck.vhd"
+   type="VHDL"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_jtag_debug_module_wrapper.vhd"
+   type="VHDL"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_nios2_waves.do"
+   type="OTHER"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_ociram_default_contents.dat"
+   type="DAT"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_ociram_default_contents.hex"
+   type="HEX"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_ociram_default_contents.mif"
+   type="MIF"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_oci_test_bench.vhd"
+   type="VHDL"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_rf_ram_a.dat"
+   type="DAT"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_rf_ram_a.hex"
+   type="HEX"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_rf_ram_a.mif"
+   type="MIF"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_rf_ram_b.dat"
+   type="DAT"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_rf_ram_b.hex"
+   type="HEX"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_rf_ram_b.mif"
+   type="MIF"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/submodules/UART_embedded_system_nios2_qsys_0_test_bench.vhd"
+   type="VHDL"
+   library="nios2_qsys_0" />
+ <file
+   path="UART_embedded_system/simulation/UART_embedded_system.vhd"
+   type="VHDL" />
+ <file
+   path="UART_embedded_system/simulation/uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd"
+   type="VHDL" />
+ <file
+   path="UART_embedded_system/simulation/uart_embedded_system_onchip_memory2_0_s1_translator.vhd"
+   type="VHDL" />
+ <file
+   path="UART_embedded_system/simulation/uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd"
+   type="VHDL" />
+ <file
+   path="UART_embedded_system/simulation/uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="UART_embedded_system/simulation/uart_embedded_system_rst_controller.vhd"
+   type="VHDL" />
+ <file
+   path="UART_embedded_system/simulation/uart_embedded_system_rst_controller_001.vhd"
+   type="VHDL" />
+ <file
+   path="UART_embedded_system/simulation/uart_embedded_system_nios2_qsys_0_instruction_master_translator.vhd"
+   type="VHDL" />
+ <file
+   path="UART_embedded_system/simulation/uart_embedded_system_nios2_qsys_0_data_master_translator.vhd"
+   type="VHDL" />
+ <topLevel name="UART_embedded_system" />
+ <deviceFamily name="cycloneiii" />
+ <modelMap
+   controllerPath="UART_embedded_system.onchip_memory2_0"
+   modelPath="UART_embedded_system.onchip_memory2_0" />
+</simPackage>

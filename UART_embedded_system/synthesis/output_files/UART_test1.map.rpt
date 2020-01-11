@@ -1,0 +1,320 @@
+Analysis & Synthesis report for UART_test1
+Sat Jan 11 18:54:33 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Sat Jan 11 18:54:33 2020               ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; UART_test1                                      ;
+; Top-level Entity Name              ; UART_embedded_system                            ;
+; Family                             ; Cyclone III                                     ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                          ;
++----------------------------------------------------------------------------+----------------------+--------------------+
+; Option                                                                     ; Setting              ; Default Value      ;
++----------------------------------------------------------------------------+----------------------+--------------------+
+; Device                                                                     ; EP3C25F324C8         ;                    ;
+; Top-level entity name                                                      ; UART_embedded_system ; UART_test1         ;
+; Family name                                                                ; Cyclone III          ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                  ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                   ; On                 ;
+; Enable compact report table                                                ; Off                  ; Off                ;
+; Restructure Multiplexers                                                   ; Auto                 ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                  ; Off                ;
+; Preserve fewer node names                                                  ; On                   ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                  ; Off                ;
+; Verilog Version                                                            ; Verilog_2001         ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993            ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto                 ; Auto               ;
+; Safe State Machine                                                         ; Off                  ; Off                ;
+; Extract Verilog State Machines                                             ; On                   ; On                 ;
+; Extract VHDL State Machines                                                ; On                   ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                  ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000                 ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                  ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                   ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                   ; On                 ;
+; Parallel Synthesis                                                         ; On                   ; On                 ;
+; DSP Block Balancing                                                        ; Auto                 ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                   ; On                 ;
+; Power-Up Don't Care                                                        ; On                   ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                  ; Off                ;
+; Remove Duplicate Registers                                                 ; On                   ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                  ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                  ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                  ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                  ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                  ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                   ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                  ; Off                ;
+; Optimization Technique                                                     ; Balanced             ; Balanced           ;
+; Carry Chain Length                                                         ; 70                   ; 70                 ;
+; Auto Carry Chains                                                          ; On                   ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                   ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                  ; Off                ;
+; Auto ROM Replacement                                                       ; On                   ; On                 ;
+; Auto RAM Replacement                                                       ; On                   ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                   ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto                 ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                 ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                   ; On                 ;
+; Strict RAM Replacement                                                     ; Off                  ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                   ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                  ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                   ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                  ; Off                ;
+; Auto Resource Sharing                                                      ; Off                  ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                  ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                  ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                  ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                   ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                  ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                   ; On                 ;
+; Report Parameter Settings                                                  ; On                   ; On                 ;
+; Report Source Assignments                                                  ; On                   ; On                 ;
+; Report Connectivity Checks                                                 ; On                   ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                  ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                    ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation   ; Normal compilation ;
+; HDL message level                                                          ; Level2               ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                  ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                 ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                 ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                  ; 100                ;
+; Clock MUX Protection                                                       ; On                   ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                  ; Off                ;
+; Block Design Naming                                                        ; Auto                 ; Auto               ;
+; SDC constraint protection                                                  ; Off                  ; Off                ;
+; Synthesis Effort                                                           ; Auto                 ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                   ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                  ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium               ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto                 ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                   ; On                 ;
+; Synthesis Seed                                                             ; 1                    ; 1                  ;
++----------------------------------------------------------------------------+----------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Jan 11 18:54:30 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off UART_test1 -c UART_test1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file uart_embedded_system.vhd
+    Info (12022): Found design unit 1: UART_embedded_system-rtl
+    Info (12023): Found entity 1: UART_embedded_system
+Info (12127): Elaborating entity "UART_embedded_system" for the top level hierarchy
+Warning (12125): Using design file uart_embedded_system_nios2_qsys_0_instruction_master_translator.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: uart_embedded_system_nios2_qsys_0_instruction_master_translator-rtl
+    Info (12023): Found entity 1: uart_embedded_system_nios2_qsys_0_instruction_master_translator
+Info (12128): Elaborating entity "uart_embedded_system_nios2_qsys_0_instruction_master_translator" for hierarchy "uart_embedded_system_nios2_qsys_0_instruction_master_translator:nios2_qsys_0_instruction_master_translator"
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_instruction_master_translator.vhd(61): used implicit default value for signal "av_readdatavalid" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_instruction_master_translator.vhd(62): used implicit default value for signal "av_response" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_instruction_master_translator.vhd(66): used implicit default value for signal "av_writeresponsevalid" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_instruction_master_translator.vhd(67): used implicit default value for signal "uav_clken" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_instruction_master_translator.vhd(69): used implicit default value for signal "uav_writeresponserequest" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (12125): Using design file uart_embedded_system_nios2_qsys_0_data_master_translator.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: uart_embedded_system_nios2_qsys_0_data_master_translator-rtl
+    Info (12023): Found entity 1: uart_embedded_system_nios2_qsys_0_data_master_translator
+Info (12128): Elaborating entity "uart_embedded_system_nios2_qsys_0_data_master_translator" for hierarchy "uart_embedded_system_nios2_qsys_0_data_master_translator:nios2_qsys_0_data_master_translator"
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_data_master_translator.vhd(63): used implicit default value for signal "av_readdatavalid" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_data_master_translator.vhd(64): used implicit default value for signal "av_response" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_data_master_translator.vhd(66): used implicit default value for signal "av_writeresponsevalid" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_data_master_translator.vhd(67): used implicit default value for signal "uav_clken" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_data_master_translator.vhd(69): used implicit default value for signal "uav_writeresponserequest" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (12125): Using design file uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator-rtl
+    Info (12023): Found entity 1: uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator
+Info (12128): Elaborating entity "uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator" for hierarchy "uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator:nios2_qsys_0_jtag_debug_module_translator"
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd(59): used implicit default value for signal "av_beginbursttransfer" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd(60): used implicit default value for signal "av_begintransfer" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd(61): used implicit default value for signal "av_burstcount" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd(62): used implicit default value for signal "av_chipselect" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd(63): used implicit default value for signal "av_clken" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd(64): used implicit default value for signal "av_lock" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd(65): used implicit default value for signal "av_outputenable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd(68): used implicit default value for signal "av_writebyteenable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd(69): used implicit default value for signal "av_writeresponserequest" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd(72): used implicit default value for signal "uav_response" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd(74): used implicit default value for signal "uav_writeresponsevalid" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (12125): Using design file uart_embedded_system_onchip_memory2_0_s1_translator.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: uart_embedded_system_onchip_memory2_0_s1_translator-rtl
+    Info (12023): Found entity 1: uart_embedded_system_onchip_memory2_0_s1_translator
+Info (12128): Elaborating entity "uart_embedded_system_onchip_memory2_0_s1_translator" for hierarchy "uart_embedded_system_onchip_memory2_0_s1_translator:onchip_memory2_0_s1_translator"
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_onchip_memory2_0_s1_translator.vhd(58): used implicit default value for signal "av_beginbursttransfer" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_onchip_memory2_0_s1_translator.vhd(59): used implicit default value for signal "av_begintransfer" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_onchip_memory2_0_s1_translator.vhd(60): used implicit default value for signal "av_burstcount" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_onchip_memory2_0_s1_translator.vhd(61): used implicit default value for signal "av_debugaccess" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_onchip_memory2_0_s1_translator.vhd(62): used implicit default value for signal "av_lock" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_onchip_memory2_0_s1_translator.vhd(63): used implicit default value for signal "av_outputenable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_onchip_memory2_0_s1_translator.vhd(64): used implicit default value for signal "av_read" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_onchip_memory2_0_s1_translator.vhd(68): used implicit default value for signal "av_writebyteenable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_onchip_memory2_0_s1_translator.vhd(69): used implicit default value for signal "av_writeresponserequest" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_onchip_memory2_0_s1_translator.vhd(72): used implicit default value for signal "uav_response" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_onchip_memory2_0_s1_translator.vhd(74): used implicit default value for signal "uav_writeresponsevalid" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (12125): Using design file uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator-rtl
+    Info (12023): Found entity 1: uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator
+Info (12128): Elaborating entity "uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator" for hierarchy "uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator:reg32_avalon_interface_0_avalon_slave_0_translator"
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(57): used implicit default value for signal "av_address" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(58): used implicit default value for signal "av_beginbursttransfer" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(59): used implicit default value for signal "av_begintransfer" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(60): used implicit default value for signal "av_burstcount" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(61): used implicit default value for signal "av_clken" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(62): used implicit default value for signal "av_debugaccess" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(63): used implicit default value for signal "av_lock" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(64): used implicit default value for signal "av_outputenable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(68): used implicit default value for signal "av_writebyteenable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(69): used implicit default value for signal "av_writeresponserequest" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(72): used implicit default value for signal "uav_response" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(74): used implicit default value for signal "uav_writeresponsevalid" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (12125): Using design file uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator-rtl
+    Info (12023): Found entity 1: uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator
+Info (12128): Elaborating entity "uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator" for hierarchy "uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator:jtag_uart_0_avalon_jtag_slave_translator"
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd(58): used implicit default value for signal "av_beginbursttransfer" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd(59): used implicit default value for signal "av_begintransfer" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd(60): used implicit default value for signal "av_burstcount" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd(61): used implicit default value for signal "av_byteenable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd(62): used implicit default value for signal "av_clken" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd(63): used implicit default value for signal "av_debugaccess" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd(64): used implicit default value for signal "av_lock" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd(65): used implicit default value for signal "av_outputenable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd(68): used implicit default value for signal "av_writebyteenable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd(69): used implicit default value for signal "av_writeresponserequest" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd(72): used implicit default value for signal "uav_response" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd(74): used implicit default value for signal "uav_writeresponsevalid" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator" for hierarchy "uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator:uart_0_avalon_slave_0_translator"
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(57): used implicit default value for signal "av_address" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(58): used implicit default value for signal "av_beginbursttransfer" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(59): used implicit default value for signal "av_begintransfer" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(60): used implicit default value for signal "av_burstcount" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(61): used implicit default value for signal "av_clken" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(62): used implicit default value for signal "av_debugaccess" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(63): used implicit default value for signal "av_lock" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(64): used implicit default value for signal "av_outputenable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(68): used implicit default value for signal "av_writebyteenable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(69): used implicit default value for signal "av_writeresponserequest" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(72): used implicit default value for signal "uav_response" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd(74): used implicit default value for signal "uav_writeresponsevalid" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (12125): Using design file uart_embedded_system_rst_controller.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: uart_embedded_system_rst_controller-rtl
+    Info (12023): Found entity 1: uart_embedded_system_rst_controller
+Info (12128): Elaborating entity "uart_embedded_system_rst_controller" for hierarchy "uart_embedded_system_rst_controller:rst_controller"
+Warning (12125): Using design file uart_embedded_system_rst_controller_001.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: uart_embedded_system_rst_controller_001-rtl
+    Info (12023): Found entity 1: uart_embedded_system_rst_controller_001
+Info (12128): Elaborating entity "uart_embedded_system_rst_controller_001" for hierarchy "uart_embedded_system_rst_controller_001:rst_controller_001"
+Warning (10541): VHDL Signal Declaration warning at uart_embedded_system_rst_controller_001.vhd(35): used implicit default value for signal "reset_req" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Error (12006): Node instance "nios2_qsys_0" instantiates undefined entity "UART_embedded_system_nios2_qsys_0" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 1419
+Error (12006): Node instance "onchip_memory2_0" instantiates undefined entity "UART_embedded_system_onchip_memory2_0" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 1448
+Error (12006): Node instance "reg32_avalon_interface_0" instantiates undefined entity "reg32_avalon_interface" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 1462
+Error (12006): Node instance "jtag_uart_0" instantiates undefined entity "UART_embedded_system_jtag_uart_0" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 1475
+Error (12006): Node instance "uart_0" instantiates undefined entity "reg32_avalon_interface" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 1489
+Error (12006): Node instance "nios2_qsys_0_instruction_master_translator" instantiates undefined entity "altera_merlin_master_translator" File: E:/altera/Projet/UART_embedded_system/synthesis/uart_embedded_system_nios2_qsys_0_instruction_master_translator.vhd Line: 142
+Error (12006): Node instance "nios2_qsys_0_data_master_translator" instantiates undefined entity "altera_merlin_master_translator" File: E:/altera/Projet/UART_embedded_system/synthesis/uart_embedded_system_nios2_qsys_0_data_master_translator.vhd Line: 142
+Error (12006): Node instance "nios2_qsys_0_jtag_debug_module_translator" instantiates undefined entity "altera_merlin_slave_translator" File: E:/altera/Projet/UART_embedded_system/synthesis/uart_embedded_system_nios2_qsys_0_jtag_debug_module_translator.vhd Line: 150
+Error (12006): Node instance "onchip_memory2_0_s1_translator" instantiates undefined entity "altera_merlin_slave_translator" File: E:/altera/Projet/UART_embedded_system/synthesis/uart_embedded_system_onchip_memory2_0_s1_translator.vhd Line: 150
+Error (12006): Node instance "reg32_avalon_interface_0_avalon_slave_0_translator" instantiates undefined entity "altera_merlin_slave_translator" File: E:/altera/Projet/UART_embedded_system/synthesis/uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd Line: 150
+Error (12006): Node instance "jtag_uart_0_avalon_jtag_slave_translator" instantiates undefined entity "altera_merlin_slave_translator" File: E:/altera/Projet/UART_embedded_system/synthesis/uart_embedded_system_jtag_uart_0_avalon_jtag_slave_translator.vhd Line: 150
+Error (12006): Node instance "reg32_avalon_interface_0_avalon_slave_0_translator" instantiates undefined entity "altera_merlin_slave_translator" File: E:/altera/Projet/UART_embedded_system/synthesis/uart_embedded_system_reg32_avalon_interface_0_avalon_slave_0_translator.vhd Line: 150
+Error (12006): Node instance "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent" instantiates undefined entity "altera_merlin_master_agent" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 1970
+Error (12006): Node instance "nios2_qsys_0_data_master_translator_avalon_universal_master_0_agent" instantiates undefined entity "altera_merlin_master_agent" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2052
+Error (12006): Node instance "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent" instantiates undefined entity "altera_merlin_slave_agent" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2134
+Error (12006): Node instance "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo" instantiates undefined entity "altera_avalon_sc_fifo" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2217
+Error (12006): Node instance "onchip_memory2_0_s1_translator_avalon_universal_slave_0_agent" instantiates undefined entity "altera_merlin_slave_agent" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2260
+Error (12006): Node instance "onchip_memory2_0_s1_translator_avalon_universal_slave_0_agent_rsp_fifo" instantiates undefined entity "altera_avalon_sc_fifo" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2343
+Error (12006): Node instance "reg32_avalon_interface_0_avalon_slave_0_translator_avalon_universal_slave_0_agent" instantiates undefined entity "altera_merlin_slave_agent" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2386
+Error (12006): Node instance "reg32_avalon_interface_0_avalon_slave_0_translator_avalon_universal_slave_0_agent_rsp_fifo" instantiates undefined entity "altera_avalon_sc_fifo" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2469
+Error (12006): Node instance "jtag_uart_0_avalon_jtag_slave_translator_avalon_universal_slave_0_agent" instantiates undefined entity "altera_merlin_slave_agent" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2512
+Error (12006): Node instance "jtag_uart_0_avalon_jtag_slave_translator_avalon_universal_slave_0_agent_rsp_fifo" instantiates undefined entity "altera_avalon_sc_fifo" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2595
+Error (12006): Node instance "uart_0_avalon_slave_0_translator_avalon_universal_slave_0_agent" instantiates undefined entity "altera_merlin_slave_agent" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2638
+Error (12006): Node instance "uart_0_avalon_slave_0_translator_avalon_universal_slave_0_agent_rsp_fifo" instantiates undefined entity "altera_avalon_sc_fifo" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2721
+Error (12006): Node instance "addr_router" instantiates undefined entity "UART_embedded_system_addr_router" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2764
+Error (12006): Node instance "addr_router_001" instantiates undefined entity "UART_embedded_system_addr_router_001" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2781
+Error (12006): Node instance "id_router" instantiates undefined entity "UART_embedded_system_id_router" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2798
+Error (12006): Node instance "id_router_001" instantiates undefined entity "UART_embedded_system_id_router" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2815
+Error (12006): Node instance "id_router_002" instantiates undefined entity "UART_embedded_system_id_router_002" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2832
+Error (12006): Node instance "id_router_003" instantiates undefined entity "UART_embedded_system_id_router_002" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2849
+Error (12006): Node instance "id_router_004" instantiates undefined entity "UART_embedded_system_id_router_002" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2866
+Error (12006): Node instance "rst_controller" instantiates undefined entity "altera_reset_controller" File: E:/altera/Projet/UART_embedded_system/synthesis/uart_embedded_system_rst_controller.vhd Line: 72
+Error (12006): Node instance "rst_controller_001" instantiates undefined entity "altera_reset_controller" File: E:/altera/Projet/UART_embedded_system/synthesis/uart_embedded_system_rst_controller_001.vhd Line: 72
+Error (12006): Node instance "cmd_xbar_demux" instantiates undefined entity "UART_embedded_system_cmd_xbar_demux" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2941
+Error (12006): Node instance "cmd_xbar_demux_001" instantiates undefined entity "UART_embedded_system_cmd_xbar_demux_001" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 2965
+Error (12006): Node instance "cmd_xbar_mux" instantiates undefined entity "UART_embedded_system_cmd_xbar_mux" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 3007
+Error (12006): Node instance "cmd_xbar_mux_001" instantiates undefined entity "UART_embedded_system_cmd_xbar_mux" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 3031
+Error (12006): Node instance "rsp_xbar_demux" instantiates undefined entity "UART_embedded_system_cmd_xbar_demux" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 3055
+Error (12006): Node instance "rsp_xbar_demux_001" instantiates undefined entity "UART_embedded_system_cmd_xbar_demux" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 3079
+Error (12006): Node instance "rsp_xbar_demux_002" instantiates undefined entity "UART_embedded_system_rsp_xbar_demux_002" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 3103
+Error (12006): Node instance "rsp_xbar_demux_003" instantiates undefined entity "UART_embedded_system_rsp_xbar_demux_002" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 3121
+Error (12006): Node instance "rsp_xbar_demux_004" instantiates undefined entity "UART_embedded_system_rsp_xbar_demux_002" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 3139
+Error (12006): Node instance "rsp_xbar_mux" instantiates undefined entity "UART_embedded_system_rsp_xbar_mux" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 3157
+Error (12006): Node instance "rsp_xbar_mux_001" instantiates undefined entity "UART_embedded_system_rsp_xbar_mux_001" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 3181
+Error (12006): Node instance "irq_mapper" instantiates undefined entity "UART_embedded_system_irq_mapper" File: E:/altera/Projet/UART_embedded_system/synthesis/UART_embedded_system.vhd Line: 3223
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 45 errors, 78 warnings
+    Error: Peak virtual memory: 4635 megabytes
+    Error: Processing ended: Sat Jan 11 18:54:33 2020
+    Error: Elapsed time: 00:00:03
+    Error: Total CPU time (on all processors): 00:00:02
+
+

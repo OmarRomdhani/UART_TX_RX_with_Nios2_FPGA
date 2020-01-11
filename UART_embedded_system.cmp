@@ -1,0 +1,9 @@
+	component UART_embedded_system is
+		port (
+			clk_clk         : in  std_logic                     := 'X'; -- clk
+			resetn_reset_n  : in  std_logic                     := 'X'; -- reset_n
+			to_hex_readdata : out std_logic_vector(31 downto 0);        -- readdata
+			to_hex_1_export : out std_logic_vector(31 downto 0)         -- export
+		);
+	end component UART_embedded_system;
+
